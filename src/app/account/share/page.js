@@ -29,13 +29,13 @@ export default function Share(props) {
 
   // const handleBankAccount = async () => {
   //   const id = 0;
-  //   const resp = await fetch(`127.0.0.1:3000http://localhost:9999/banks/${id}`)
+  //   const resp = await fetch(`http://127.0.0.1:3000http://localhost:9999/banks/${id}`)
   //   const result = await resp.json();
   //   console.log(result);
   // }
 
   // const handleBankTransactions = async () => {
-  //   const resp = await fetch(`127.0.0.1:3000http://localhost:9999/transactions`)
+  //   const resp = await fetch(`http://127.0.0.1:3000http://localhost:9999/transactions`)
   //   const result = await resp.json();
   //   console.log(result);
   // }

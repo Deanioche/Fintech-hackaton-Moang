@@ -22,7 +22,7 @@ export default function Login(props) {
       body: JSON.stringify({ nickname, password })
     }
     try {
-      const resp = await fetch(`127.0.0.1:3000/api/login`, options);
+      const resp = await fetch(`http://127.0.0.1:3000/api/login`, options);
       if (!resp.ok) {
         throw new Error("Bad response", {
           cause: { resp }

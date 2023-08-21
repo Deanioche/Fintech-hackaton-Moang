@@ -36,7 +36,7 @@ export default function JoinForm3() {
       body: JSON.stringify(member),
     }
     try {
-      const resp = await fetch(`127.0.0.1:3000/api/users`, options);
+      const resp = await fetch(`http://127.0.0.1:3000/api/users`, options);
       if (!resp.ok) {
         throw new Error("Bad response", {
           cause: { resp }
