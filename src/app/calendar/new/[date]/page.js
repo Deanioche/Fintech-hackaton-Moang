@@ -49,7 +49,7 @@ export default function NewContent({ params: { date } }) {
       return;
     }
 
-    fetch('/api/calendar/add', {
+    fetch(`127.0.0.1:3000/api/calendar/add`, {
       method: 'POST',
       body: JSON.stringify(content)
     })

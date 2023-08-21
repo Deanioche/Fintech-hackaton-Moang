@@ -6,10 +6,6 @@ const SelectMonth = ({ results }) => {
   const [listByDate, setListByDate] = useState([]);
 
   useEffect(() => {
-    // fetch('/api/account')
-    // .then(e => e.json())
-    // .then(results => {
-
       for (let i = 1; i < 32; i++) {
         const perDate = results.filter(x => +(x.date.split("-")[2]) === i);
         if (perDate.length === 0)

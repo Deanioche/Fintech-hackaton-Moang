@@ -94,7 +94,7 @@ const Account = () => {
       },
     }
     try {
-      const resp = await fetch(`/api/bank`, options);
+      const resp = await fetch(`127.0.0.1:3000/api/bank`, options);
       if (!resp.ok) {
         throw new Error("Bad response", {
           cause: { resp }

@@ -21,7 +21,7 @@ export default function CalendarPage() {
   const [detail, setDetail] = useState(null);
 
   useEffect(() => {
-    fetch('/api/calendar')
+    fetch(`127.0.0.1:3000/api/calendar`)
       .then(res => res.json())
       .then(data => {
         for (let i = 0; i < data.length; i++) {

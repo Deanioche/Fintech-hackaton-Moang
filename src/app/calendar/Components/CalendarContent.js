@@ -31,7 +31,7 @@ function addCommas(number) {
 
 export default function CalendarContent({ cost, keyword, date }) {
   const [totalCost, setCost] = useState(0);
-  fetch('/api/account')
+  fetch(`127.0.0.1:3000/api/account`)
     .then(res => res.json())
     .then(data => {
       const perDate = data.filter(x => +(x.date.split("-")[2]) === new Date(date).getDate());

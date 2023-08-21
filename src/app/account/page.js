@@ -26,7 +26,7 @@ export default function Account(props) {
       },
     }
     try {
-      const resp = await fetch(`/api/account`, options);
+      const resp = await fetch(`127.0.0.1:3000/api/account`, options);
       if (!resp.ok) {
         throw new Error("Bad response", {
           cause: { resp }
