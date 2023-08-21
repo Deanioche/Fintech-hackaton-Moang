@@ -22,7 +22,7 @@ export default function Login(props) {
       body: JSON.stringify({ nickname, password })
     }
     try {
-      const resp = await fetch(process.env.API_URL + 'login', options);
+      const resp = await fetch('/api/login', options);
       if (!resp.ok) {
         throw new Error("Bad response", {
           cause: { resp }

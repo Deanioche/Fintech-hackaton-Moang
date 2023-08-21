@@ -94,7 +94,7 @@ const Account = () => {
       },
     }
     try {
-      const resp = await fetch(process.env.NEXT_PUBLIC_API_URL + `bank`, options);
+      const resp = await fetch(`/api/bank`, options);
       if (!resp.ok) {
         throw new Error("Bad response", {
           cause: { resp }

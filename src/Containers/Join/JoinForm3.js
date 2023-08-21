@@ -36,7 +36,7 @@ export default function JoinForm3() {
       body: JSON.stringify(member),
     }
     try {
-      const resp = await fetch(process.env.NEXT_PUBLIC_API_URL +`users`, options);
+      const resp = await fetch(`/api/users`, options);
       if (!resp.ok) {
         throw new Error("Bad response", {
           cause: { resp }

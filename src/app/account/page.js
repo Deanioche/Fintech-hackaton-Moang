@@ -26,7 +26,7 @@ export default function Account(props) {
       },
     }
     try {
-      const resp = await fetch(process.env.NEXT_PUBLIC_API_URL + `account`, options);
+      const resp = await fetch(`/api/account`, options);
       if (!resp.ok) {
         throw new Error("Bad response", {
           cause: { resp }
